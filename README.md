@@ -1,6 +1,6 @@
 # Object Classification Project
 
-Welcome to the Object Classification project repository! This project is an academic endeavor associated with a course at the Indian Institute of Technology, Jodhpur (IITJ).
+Welcome to the Object Classification project repository! This project is an academic endeavor associated with a course at the Indian Institute of Technology(IIT), Jodhpur.
 
 ## Overview
 
