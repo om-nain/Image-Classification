@@ -19,3 +19,4 @@ The objective of this project is to develop a system for object classification, 
 - `data/`: Directory for storing datasets used for training and testing.
 - `docs/`: Documentation files related to the project.
 - `models/`: Pre-trained models or model checkpoints used in the project.
+- `Landing_Page/`: Contains the source code for the projects' landing page.
