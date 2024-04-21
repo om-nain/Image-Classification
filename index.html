@@ -4,81 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Object Recognition Project</title>
-    <!-- Bootstrap CSS from CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-P9fH1jy3a+E7T6a2EZ/nYjlP4b+1mgE7kKsKVr+9W4k5l+uvPI9z4Z+xUpJv9+8k" crossorigin="anonymous">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
-    <!-- AOS CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 </head>
-<body style="background-color: #f8f9fa; font-family: Arial, sans-serif;">
+<body>
+    <header>
+        <div class="container">
+            <h1>Object Recognition Project</h1>
+            <nav>
+                <ul>
+                    <li><a href="#problem">Problem</a></li>
+                    <li><a href="#dataset">Dataset</a></li>
+                    <li><a href="#models">Models</a></li>
+                    <li><a href="#results">Results</a></li>
+                    <li><a href="#team">Team</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<header class="bg-dark text-white py-4">
-    <div class="container">
-        <h1 class="text-center">Object Recognition Project</h1>
+    <section id="problem">
+        <div class="container">
+            <h2>Problem in Detail</h2>
+            <p>Object recognition, the ability to identify objects in natural scenes, holds significant importance across various fields due to its wide-ranging applications. In this project, our aim was to evaluate and compare the efficacy of machine learning (ML) techniques for the task of object recognition. Leveraging the CIFAR-10 dataset, which comprises images across ten different classes, we implemented and analyzed several ML models. Our study focused on comparing the performance of five prominent models: K-Nearest Neighbors (KNN), Support Vector Machine (SVM), Neural Network (NN), Decision Tree, Random Forest, and Ensemble Learning. Each model was trained and tested on the CIFAR-10 dataset to assess its accuracy and effectiveness in recognizing objects within natural scenes.</p>
+        </div>
+    </section>
+
+    <section id="dataset">
+        <div class="container">
+            <h2>Info about the Dataset</h2>
+            <img src="dataset.png" alt="CIFAR-10 Dataset">
+            <p>The CIFAR-10 dataset is a well-known benchmark dataset in the field of computer vision and machine learning. It consists of 60,000 32x32 color images in 10 different classes, with each class representing a specific object or category. The dataset is divided into 50,000 training images and 10,000 test images, making it suitable for training and evaluating machine learning models for object recognition tasks.</p>
+            <p>The 10 classes in the CIFAR-10 dataset include common objects such as airplanes, automobiles, birds, cats, deer, dogs, frogs, horses, ships, and trucks. Each class contains an equal number of images, resulting in a balanced dataset. The images are low-resolution, which adds an additional challenge to the task of object recognition.</p>
+            <p>The CIFAR-10 dataset is widely used for research and benchmarking purposes due to its variety of object classes, large number of images, and relatively small image size, making it computationally tractable for experimentation. Many state-of-the-art machine learning algorithms and deep learning architectures have been trained and evaluated on this dataset, making it a standard benchmark for evaluating the performance of new models and techniques in the field of computer vision.</p>
     </div>
-</header>
+        </div>
+    </section>
 
-<main class="py-5">
-    <div class="container">
-        <section id="abstract" class="mb-5 text-center" data-aos="fade-up">
-            <h2 class="mb-3">Abstract</h2>
-            <p>Object recognition, the ability to identify objects in natural scenes, holds significant importance across various fields due to its wide-ranging applications. In this project, our aim was to evaluate and compare the efficacy of machine learning (ML) techniques for the task of object recognition. Leveraging the CIFAR-10 dataset, which comprises images across ten different classes, we implemented and analyzed several ML models.
+    <section id="results">
+        <div class="container">
+            <h2>Results and Accuracy</h2>
+            <h3>Technique 1</h3>
+            <table align="center">
+                <tr>
+                    <th>Model</th>
+                    <th>Accuracy (%)</th>
+                </tr>
+                <tr>
+                    <td>Support Vector Machine (SVM)</td>
+                    <td>61</td>
+                </tr>
+                <tr>
+                    <td>Logistic Regression</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td>Decision Tree</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>Decision Tree with best hyperparameters</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Random Forest</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>K-Nearest Neighbors (KNN)</td>
+                    <td>53</td>
+                </tr>
+                <tr>
+                    <td>Ensemble Learning</td>
+                    <td>53</td>
+                </tr>
+                <tr>
+                    <td>Multi-Layer Perceptron (MLP)</td>
+                    <td>56</td>
+                </tr>
+            </table>
+            <h3>Technique 2</h3>
+            <table align="center">
+                <tr>
+                    <th>Model</th>
+                    <th>Accuracy (%)</th>
+                </tr>
+                <tr>
+                    <td>K-Nearest Neighbors (KNN)</td>
+                    <td>38</td>
+                </tr>
+                <tr>
+                    <td>Logistic Regression</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Random Forest</td>
+                    <td>43</td>
+                </tr>
+                <tr>
+                    <td>Decision Tree</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>Decision Tree with best hyperparameters</td>
+                    <td>30</td>
+                </tr>
+            </table>
+            <p>In the first technique, we employed a preprocessing pipeline consisting of grayscale conversion followed by Histogram of Oriented Gradients (HOG) feature extraction. The classification was then performed using Support Vector Machine (SVM), which achieved the highest accuracy of 61%. However, other classifiers, such as MLP, ADAboost, random forest, logistic regression, and ensemble learning, also yielded competitive accuracies ranging from 40% to 56%.</p> 
+            <p>For the second technique, we applied PCA followed by Linear Discriminant Analysis (LDA) for dimensionality reduction. Despite the different preprocessing steps, the classification accuracies varied across classifiers. While logistic regression and random forest achieved accuracies of 40% and 43%, respectively, KNN and decision tree classifiers showed lower accuracies of 38% and 27%, respectively. However, with hyperparameter tuning, the decision tree’s accuracy improved to 30%. Comparing the two techniques, we observed that the first technique, utilizing HOG feature extraction and SVM classification, generally outperformed the second technique, which employed PCA and LDA. However, the decision tree classifier with optimized hyperparameters from the second technique exhibited a comparable accuracy to several classifiers from the first technique. 
+            <p>Overall, the choice of preprocessing pipeline and classifier significantly influenced the classification performance, with the first technique demonstrating better overall accuracy across various classifiers.</p>
+        </div>
+    </section>
+    
+    
+    
+    
 
-                Our study focused on comparing the performance of five prominent models: K-Nearest Neighbors (KNN), Support Vector Machine (SVM), Neural Network (NN), Decision Tree, Random Forest, and Ensemble Learning. Each model was trained and tested on the CIFAR-10 dataset to assess its accuracy and effectiveness in recognizing objects within natural scenes.</p>
-        </section>
+    
 
-        <section id="problem" class="mb-5 text-center" data-aos="fade-up">
-            <h2 class="mb-3">Problem in Detail</h2>
-            <p>[Insert details about the problem here]</p>
-        </section>
-
-        <section id="dataset" class="mb-5 text-center" data-aos="fade-up">
-            <h2 class="mb-3">Info about the Dataset</h2>
-            <p>[Insert information about the CIFAR-10 dataset here]</p>
-            <img src="CIFAR-10_examples.png" class="img-fluid rounded" alt="CIFAR-10 Dataset Example">
-        </section>
-
-        <section id="models" class="mb-5 text-center" data-aos="fade-up">
-            <h2 class="mb-3">Types of Models Trained</h2>
-            <p>[Insert details about the ML models trained (KNN, SVM, NN, Decision Tree, Ensemble Learning) here]</p>
-        </section>
-
-        <section id="results" class="mb-5 text-center" data-aos="fade-up">
-            <h2 class="mb-3">Results and Accuracy</h2>
-            <p>[Insert your results and accuracy comparison here]</p>
-        </section>
-
-        <section id="team" class="mb-5 text-center" data-aos="fade-up">
-            <h2 class="mb-3">Team Members</h2>
-            <ul class="list-unstyled">
-                <li>Shahil Sharma</li>
-                <li>Shivanshu Verma</li>
-                <li>Om Prakash Nain</li>
-                <li>Amol Gaur</li>
-                <li>Tanisha Mangliya</li>
-                <li>Abhishek Yadav</li>
-                <li>Binay Suman</li>
+    <section id="team">
+        <div class="container">
+            <h2>Team Members</h2>
+            <ul class="team-list">
+                <li>Shahil Sharma (B22CS048)</li>
+                <li>Shivanshu Verma(B22ES010)</li>
+                <li>Om Prakash Nain(B22AI062)</li>
+                <li>Amol Gaur(B22CS008)</li>
+                <li>Tanisha Mangliya(B22EE067)</li>
+                <li>Abhishek Yadav(B22ES020)</li>
+                <li>Binay Suman(B22CS019)</li>
             </ul>
-        </section>
-    </div>
-</main>
+        </div>
+    </section>
 
-<footer class="bg-dark text-white py-4">
-    <div class="container text-center">
-        <p>&copy; 2024 Object Recognition Project</p>
-    </div>
-</footer>
-
-<!-- Bootstrap JS from CDN -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-JU/Mw+mXqPtk1tviT5sZl/x8Ad1+aTH6c1Fg5K6YbMD5z2KOby0Bk4gtdMUsd1jt" crossorigin="anonymous"></script>
-<!-- AOS JS -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<!-- Custom JavaScript -->
-<script src="script.js"></script>
-
-<script>
-    AOS.init();
-</script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Object Recognition Project. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
