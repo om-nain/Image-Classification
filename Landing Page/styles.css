@@ -1,0 +1,82 @@
+/* Body Styles */
+body {
+    background-color: #ffdab9; /* Peach background color */
+    color: #333; /* Text color */
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: #343a40; /* Dark background color */
+    color: #fff; /* Text color */
+    padding: 20px 0; /* Add padding */
+    text-align: center; /* Center header content */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem; /* Larger font size */
+}
+
+/* Main Content Styles */
+main {
+    padding: 30px 0; /* Add padding */
+    text-align: center; /* Center content */
+}
+
+section {
+    background-color: #fff; /* White background color */
+    border-radius: 10px;
+    padding: 30px; /* Increase padding */
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+section h2 {
+    margin-bottom: 20px; /* Add spacing below headings */
+}
+
+section p {
+    line-height: 1.6; /* Increase line height */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Add border radius to images */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40; /* Dark background color */
+    color: #fff; /* Text color */
+    padding: 20px 0; /* Add padding */
+    text-align: center;
+}
+
+/* Bootstrap Overrides */
+.container {
+    max-width: 800px; /* Limit container width */
+    margin: auto; /* Center container */
+}
+
+/* AOS Animation Overrides */
+[data-aos] {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+}
+
+#abstract {
+    font-family: 'Arial', sans-serif; /* Change font family */
+}
+
+#abstract p {
+    font-size: 1.1rem; /* Increase font size */
+    line-height: 1.8; /* Increase line height */
+    margin-bottom: 20px; /* Add spacing */
+    color: #555; /* Dark gray text color */
+}
