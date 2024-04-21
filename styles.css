@@ -1,93 +1,61 @@
-/* Body Styles */
 body {
-    background-color: #ffdab9; /* Peach background color */
-    color: #333; /* Text color */
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header Styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
 header {
-    background-color: #343a40; /* Dark background color */
-    color: #fff; /* Text color */
-    padding: 20px 0; /* Add padding */
-    text-align: center; /* Center header content */
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center; /* Center align header content */
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5rem; /* Larger font size */
+    font-family: 'Arial Black', Arial, sans-serif; /* Nice font for heading */
 }
 
-/* Main Content Styles */
-main {
-    padding: 30px 0; /* Add padding */
-    text-align: center; /* Center content */
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
 }
 
 section {
-    background-color: #fff; /* White background color */
-    border-radius: 10px;
-    padding: 30px; /* Increase padding */
-    margin-bottom: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    padding: 50px 0;
+    text-align: center; /* Center align section content */
 }
 
 section h2 {
-    margin-bottom: 20px; /* Add spacing below headings */
+    margin-bottom: 20px;
 }
 
-section p {
-    line-height: 1.6; /* Increase line height */
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px; /* Add border radius to images */
-}
-
-/* Footer Styles */
 footer {
-    background-color: #343a40; /* Dark background color */
-    color: #fff; /* Text color */
-    padding: 20px 0; /* Add padding */
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
 }
-
-/* Bootstrap Overrides */
-.container {
-    max-width: 800px; /* Limit container width */
-    margin: auto; /* Center container */
+.team-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* AOS Animation Overrides */
-[data-aos] {
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-[data-aos].aos-animate {
-    opacity: 1;
-}
-
-#abstract {
-    font-family: 'Arial', sans-serif; /* Change font family */
-}
-
-#abstract p {
-    font-size: 1.1rem; /* Increase font size */
-    line-height: 1.8; /* Increase line height */
-    margin-bottom: 20px; /* Add spacing */
-    color: #555; /* Dark gray text color */
-}
-
-#problem {
-    font-family: 'Arial', sans-serif; /* Change font family */
-}
-
-#problem p {
-    font-size: 1.1rem; /* Increase font size */
-    line-height: 1.8; /* Increase line height */
-    margin-bottom: 20px; /* Add spacing */
-    color: #555; /* Dark gray text color */
+.team-list li {
+    margin-bottom: 10px; /* Optional: Add some spacing between each team member */
 }
