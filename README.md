@@ -17,5 +17,6 @@ The objective of this project is to develop a system for object classification, 
 
 - `src/`: Contains the source code for the object classification system.
 - `data/`: Directory for storing datasets used for training and testing.
-- `docs/`: Documentation files related to the project.
+- `docs/`: Documentation files related to the project with the project landing page.
 - `models/`: Pre-trained models or model checkpoints used in the project.
+

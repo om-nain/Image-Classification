@@ -80,3 +80,14 @@ footer {
     margin-bottom: 20px; /* Add spacing */
     color: #555; /* Dark gray text color */
 }
+
+#problem {
+    font-family: 'Arial', sans-serif; /* Change font family */
+}
+
+#problem p {
+    font-size: 1.1rem; /* Increase font size */
+    line-height: 1.8; /* Increase line height */
+    margin-bottom: 20px; /* Add spacing */
+    color: #555; /* Dark gray text color */
+}
