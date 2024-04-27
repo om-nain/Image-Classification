@@ -22,5 +22,5 @@ The objective of this project is to develop a system for object classification, 
 
 ## Demo Link
 
-- [Demo (SVM Classifier)](#) - [10.23.16.125:7860]
+- [Link](10.23.16.125:7860) - Demo link of the highest accuracy classifier (SVM Classifier).
 
