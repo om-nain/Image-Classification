@@ -23,5 +23,6 @@ The objective of this project is to develop a system for object classification, 
 ## Demo Link
 
 - [Link](http://10.23.16.125:7860) - Demo link of the highest accuracy classifier (SVM Classifier).
+- The above stated link is only accessible over the local institute network as it is hosted locally, it the above stated link appears unaccessible over the local network it means that the server has been shut down, we can rerun it upon request.
 
 
