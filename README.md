@@ -20,3 +20,8 @@ The objective of this project is to develop a system for object classification, 
 - `docs/`: Documentation files related to the project with the project landing page.
 - `models/`: Pre-trained models or model checkpoints used in the project.
 
+## Demo Link
+
+- [Link](http://10.23.16.125:7860) - Demo link of the highest accuracy classifier (SVM Classifier).
+
+
